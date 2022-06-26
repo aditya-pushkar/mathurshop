@@ -1,16 +1,13 @@
 import Headers from "./pages/Headers";
 import HomePage from "./pages/HomePage";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
     <div className="App">
     <Headers />
     <HomePage />
-    <div style={{
-      width: "100%",
-      backgroundColor: "green",
-      height: "700px"
-    }}></div>
+    <Footer />
     </div>
   );
 }

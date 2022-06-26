@@ -34,7 +34,7 @@ const CardFlower = () => {
           <div className="group relative">
             <div className="w-full min-h-80 bg-white aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
               <img
-                src="https://images.pexels.com/photos/7475142/pexels-photo-7475142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
                 alt="Front of men&#039;s Basic Tee in black."
                 className="w-full h-full object-center object-cover lg:w-full lg:h-full"
               />
@@ -120,8 +120,12 @@ const CardFlower = () => {
           </div>
           
         </div>
-
       </div>
+
+      <a>
+      <p style={{paddingBottom: "25px",textDecoration: "underline"}} className="text-center  transition duration-500 ease-in-out text-primaryBtn  smooth hover:text-lg">explore</p>
+      </a>
+
     </div>
   );
 };

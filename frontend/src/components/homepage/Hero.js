@@ -1,9 +1,10 @@
 import React from "react";
+import '../homepage/Hero.css'
 
 const Hero = () => {
   return (
     <div >
-      <section className="w-fit sticky">
+      <section  className="w-fit ">
         <div className="px-4 py-12 mx-auto sm:px-6 md:px-12 lg:px-24 lg:py-24 bg-gradient-to-r from-gradiantRed to-gradiantOrange">
           <div className="flex flex-wrap items-center mx-auto max-w-7xl">
             <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
@@ -13,7 +14,7 @@ const Hero = () => {
 
                   <div className="absolute rounded-full bg-fuchsia-300 -bottom-24 right-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
                   <div className="relative">
-                    <img className="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="https://images.pexels.com/photos/3405808/pexels-photo-3405808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                    <img  className="object-cover object-center  rounded-lg shadow-2xl heroImg" alt="hero" src="https://images.pexels.com/photos/3405808/pexels-photo-3405808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
                   </div>
                 </div>
               </div>

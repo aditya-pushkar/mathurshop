@@ -186,10 +186,12 @@ const CardBouquet = () => {
             </div>
           </div>    
 
-          
+        
         </div>
-
       </div>
+      <a href="/flowers">
+      <p  style={{marginTop: "-35px", textDecoration: "underline"}} className="text-center transition duration-500 ease-in-out text-primaryBtn mb-10 smooth hover:text-lg">explore</p>
+      </a>
     </div>
   );
 };
