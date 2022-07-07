@@ -1,7 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import scrollTo from "../../helpers/scrollTo";
+
 import '../homepage/Hero.css'
 
 const Hero = () => {
+
+
+  const goToFlower = () => {
+    scrollTo(900)
+  }
+
   return (
     <div >
       <section  className="w-fit ">
@@ -25,9 +35,11 @@ const Hero = () => {
               <p className="mb-8 text-base leading-relaxed text-left text-white">Make someone happy by gifting them a flower.</p>
               <div className="mt-0 lg:mt-6 max-w-7xl sm:flex">
                 <div className="mt-3 rounded-lg sm:mt-0">
-                  <button className="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-primaryBtn rounded-xl hover:bg-white hover:text-primaryBtn focus:outline-white focus:ring-2 focus:ring-offset-2 focus:white">
-                    Explore
-                  </button>
+                  
+                <button onClick={goToFlower} className="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-primaryBtn rounded-xl hover:bg-white hover:text-primaryBtn focus:outline-white focus:ring-2 focus:ring-offset-2 focus:white">
+                  Explore
+                </button>
+                
                 </div>
               </div>
             </div>

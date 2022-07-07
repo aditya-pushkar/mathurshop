@@ -1,15 +1,16 @@
 import React from "react";
+import '../homepage/Faq.css'
 
 const Faq = () => {
   return (
-    <div>
+    <div >
     <h1 className="mb-10 mt-10 text-4xl font-bold text-center leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">FAQ</h1>
-    <div className="flex justify-center mb-10">
+    <div className="flex justify-center mb-10 faqMobile">
       <div className="space-y-4">
         <details className="p-6 rounded-lg bg-gray-100 backdrop-opacity-70 group">
           <summary className="flex items-center justify-between cursor-pointer">
-            <h5 className="font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+            <h5 className="font-medium text-neutral-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing ?
             </h5>
 
             <span className="relative flex-shrink-0 ml-1.5 w-5 h-5">

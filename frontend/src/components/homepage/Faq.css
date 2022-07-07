@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .faqMobile {
+        max-width: 300px;
+        margin-left: 2rem;
+    }
+} 

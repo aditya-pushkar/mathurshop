@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import ScrollToFaqs from '../helpers/scrollToFaq'
 
 const Footer = () => {
   return (
@@ -81,8 +84,8 @@ const Footer = () => {
 
           <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-300">
             <a class="hover:opacity-75" href=""> Contact </a>
-            <a class="hover:opacity-75" href=""> FAQs </a>
-            <a class="hover:opacity-75" href=""> Live Chat </a>
+            <a  onClick={ScrollToFaqs} class="hover:opacity-75" href=""> FAQs </a>
+            <Link class="hover:opacity-75" to="/dashboard"> Dashboard </Link>
             <a class="hover:opacity-75" href=""> Forums </a>
           </nav>
         </div>
@@ -99,7 +102,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div class="pt-12 mt-12 border-t border-gray-800">
+    <div class="pt-12 mt-12 border-t border-white">
       <div class="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
         <div class="flex space-x-3">
           <a class="hover:opacity-75" href=""> Privacy Policy </a>

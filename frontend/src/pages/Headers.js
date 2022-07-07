@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
+
 import HeaderMobile from '../components/header/HeaderMobile';
 
 const Headers = () => {
@@ -7,6 +9,7 @@ const Headers = () => {
 
   const changeBackgroundCol = () => {
     const scrl = window.scrollY;
+    // console.log("SCROLLING POSSITION : ", scrl)
     if(scrl !== 0){
       setNavBackgroundCol(true)
       return 0;
@@ -26,37 +29,39 @@ const Headers = () => {
 
   return (
     <div >
-      {showNav ? (<HeaderMobile />) : " "}
-      <header  className={`shadow-sm  w-screen fixed z-10 ${navBackgroundCol || showNav ? "bg-white text-black" : ("bg-gradient-to-r from-gradiantRed to-gradiantOrange text-white")} `}>
+      {showNav ? (<HeaderMobile setShowNav={setShowNav} />) : " "}
+      <header  className={`shadow-sm  w-screen fixed z-50 ${navBackgroundCol || showNav ? "bg-white text-black" : ("bg-gradient-to-r from-gradiantRed to-gradiantOrange text-white")} `}>
         <div className="max-w-screen-xl p-4 mx-auto ">
           <div className="flex items-center justify-between space-x-4 lg:space-x-10">
             <div className="flex lg:w-0 lg:flex-1">
-              <span className="w-20 h-10 bg-gray-200 rounded-lg"></span>
+              <Link to="/" onClick={()=>setShowNav(false)}>
+              <span className="text-4xl lg:text-5xl font-bold rounded-lg">&#9880;</span>
+              </Link>
             </div>
 
             <nav className="hidden space-x-8 text-sm font-medium md:flex">
-              <a  href="#">
+              <Link to="/flowers">
                 Flower
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/bouquets">
                Bouquet 
-              </a>
-              <a  href="#">
+              </Link>
+              <Link  to="/#service">
                 Service
-              </a>
-              <a  href="#">
+              </Link>
+              <Link  to="/contact">
                 Contact
-              </a>
+              </Link>
               {/* className="text-gray-500" */}
             </nav>
 
             <div className="items-center justify-end flex-1 hidden space-x-4 sm:flex">
-              <a
+              <Link
                 className="px-5 py-2 text-sm font-medium text-white bg-primaryBtn rounded-lg"
-                href=""
+                to="/login"
               >
                 Log in
-              </a>
+              </Link>
             </div>
 
             <div className="lg:hidden" onClick={showNavFunc}>
